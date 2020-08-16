@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 400px;
+            background-color: orange;
+            margin: 0 auto;
+            /* 开启flex布局 */
+            /*
+            块级的开启方式是display设置为flex
+            行内元素开启布局的方式是inline-flex
+             */
+            display: flex;
+
+
+
+
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+        }
+        .item1{
+            background-color: #f00;
+            /*flex-basis 用来设置flex items在main axis方向上的base size*/
+            /*auto（默认值）、具体的宽度数值(100px)*/
+            /*
+            决定flex items最终base size的因素，从优先级高到低
+            max-width\max-height\min-width[min-height
+            flex-basis
+            width\height
+            内容本身的size
+            */
+
+            /*flex-basis: auto;*/
+            flex-basis: 200px;
+        }
+        .item2{
+            background-color: #0f0;
+        }
+
+        .item3{
+            background-color: #00f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+    <strong> 呵呵呵</strong>
+
+</body>
+</html>

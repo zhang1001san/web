@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 500px;
+      height: 400px;
+      background-color: orange;
+      margin: 0 auto;
+      /* 开启flex布局 */
+      /*
+      块级的开启方式是display设置为flex
+      行内元素开启布局的方式是inline-flex
+       */
+      display: flex;
+      align-items: center;
+
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .item1 {
+      background-color: #f00;
+    }
+
+    .item2 {
+      background-color: #0f0;
+      height: 150px;
+    }
+
+    .item3 {
+      background-color: #00f;
+      /*
+      align-self
+　　　　align-self属性允许item有自己独特的在交叉轴上的对齐方式，它有六个可能的值。默认值为auto
+　　　　　　auto：和父元素align-self的值一致
+　　　　　　flex-start：顶端对齐
+　　　　　　flex-end：底部对齐
+　　　　　　center：竖直方向上居中对齐
+　　　　　　baseline：item第一行文字的底部对齐
+　　　　　　stretch：当item未设置高度时，item将和容器等高对齐
+                          */
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <div class="item item1">item1</div>
+  <div class="item item2">item2</div>
+  <div class="item item3">item3</div>
+</div>
+<strong> 呵呵呵</strong>
+
+</body>
+</html>
